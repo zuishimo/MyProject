@@ -17,7 +17,7 @@ public class HeroNode extends Hero {
 	
 	//Ó¢ÐÛÑªÁ¿
 	public int HP;
-	
+	//ÎÞÓï
 	public static void main(String[] args) {
 		
 		HeroNode roots = new HeroNode();

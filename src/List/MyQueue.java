@@ -16,7 +16,7 @@ public class MyQueue implements Queue {
 	
 	public static void main(String[] args) {
 		MyQueue queue = new MyQueue();
-		
+		//
 		for (int i = 0; i < 5; i++) {
 			queue.push(new Hero("Lion" + i));
 		}

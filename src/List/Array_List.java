@@ -12,8 +12,9 @@ public class Array_List extends Hero {
 	
 	public String toString() {
 		return name;
+//		System.out.println("Ð¡ÐÞ¸Ä");
 	}
-	
+	//
 	public static void main(String[] args) {
 
 		List<Hero> heros = new ArrayList<Hero>();
