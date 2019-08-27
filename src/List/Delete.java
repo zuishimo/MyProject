@@ -7,7 +7,7 @@ import java.util.List;
 public class Delete {
 //	System.out.println("小修改");
 	public static void main(String[] args) {
-		
+//		System.out.println("小修改");		
 		List<Hero> collection = new ArrayList<Hero>();
 		
 		for (int i = 0; i < 100; i++) {
