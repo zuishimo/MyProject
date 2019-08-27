@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Delete {
-	
+//	System.out.println("Ð¡ÐÞ¸Ä");
 	public static void main(String[] args) {
 		
 		List<Hero> collection = new ArrayList<Hero>();
