@@ -5,16 +5,16 @@ import java.util.List;
 
 public class Array_List extends Hero {
 	String name;
-	
+//	System.out.println("小修改");
 	public Array_List(String name) {
 		this.name = name;
 	}
 	
 	public String toString() {
 		return name;
-//		System.out.println("小修改");
+
 	}
-	//
+
 	public static void main(String[] args) {
 
 		List<Hero> heros = new ArrayList<Hero>();
