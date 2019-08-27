@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class TestHashMap {
-
+//	System.out.println("Ð¡ÐÞ¸Ä");
 	public static void main(String[] args) {
 		
 		int total = 3000000;
