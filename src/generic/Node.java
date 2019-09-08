@@ -1,18 +1,21 @@
-package List;
+package generic;
 import java.util.ArrayList;
+
 import java.util.List;
-public class Node {
+
+import Charactor.*;
+public class Node<T extends Comparable<T>> {
 
 	 // 左子节点
-    public Node leftNode;
+    public Node<T> leftNode;
     // 右子节点
-    public Node rightNode;
+    public Node<T> rightNode;
   
     // 值
-    public Object value;
+    public T value;
   
     // 插入 数据
-    public void add(Object v) {
+    public void add(T v) {
         // 如果当前节点没有值，就把数据放在当前节点上
         if (null == value)
             value = v;
@@ -23,13 +26,13 @@ public class Node {
              
             if ((Integer) v -((Integer)value) <= 0) {
                 if (null == leftNode)
-                    leftNode = new Node();
+                    leftNode = new Node<T>();
                 leftNode.add(v);
             }
             // 新增的值，比当前值大
             else {
                 if (null == rightNode)
-                    rightNode = new Node();
+                    rightNode = new Node<T>();
                 rightNode.add(v);
             }
   
@@ -38,8 +41,8 @@ public class Node {
     }
   
  // 中序遍历所有的节点
-    public List<Object> values() {
-        List<Object> values = new ArrayList<>();
+    public List<T> values() {
+        List<T> values = new ArrayList<>();
   
         // 左节点的遍历结果
         if (null != leftNode)
@@ -60,7 +63,9 @@ public class Node {
   
         int randoms[] = new int[] { 67, 7, 30, 73, 10, 0, 78, 81, 10, 74 };
   
-        Node roots = new Node();
+        Node<Integer> roots = new Node<Integer>();
+        Node<Hero> h = new Node<Hero>();
+        //没有实现comparable接口，不能作为Node的泛型
         for (int number : randoms) {
             roots.add(number);
         }
